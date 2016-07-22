@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Product
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fsmove="http://maybeec.github.io/task-fsmove/1.0"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xsi:schemaLocation="http://maybeec.github.io/task-fsmove/1.0 https://raw.githubusercontent.com/themetalone/oomph-task-fsmove/master/task-fsmove-updatesite/model/Oomph-task-fsmove.ecore"
+    name="fsmovetest"
+    label="FSMoveTest">
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="folderName">
+      <value>eclipse</value>
+    </detail>
+    <detail
+        key="folderName.macosx">
+      <value>Eclipse</value>
+    </detail>
+  </annotation>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      name="installation.location"/>
+  <setupTask
+      xsi:type="fsmove:FSMoveTask"
+      id="fsmove.test"
+      excludedTriggers="MANUAL"
+      resource="${installation.location/this.txt}"
+      destination="${installation.location/text/this.txt}">
+    <description>Excpects 'this.txt' in the installation location and './text/this.txt' non existent</description>
+  </setupTask>
+  <version name="Test"/>
+  <description>This is just a test setup for the fsmove task</description>
+</setup:Product>
