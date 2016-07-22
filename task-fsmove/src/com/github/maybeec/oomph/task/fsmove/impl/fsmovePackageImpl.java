@@ -202,7 +202,7 @@ public class fsmovePackageImpl extends EPackageImpl implements fsmovePackage {
 		initEAttribute(getFSMoveTask_Priority(), ecorePackage.getEInt(), "priority", "500", 0, 1, FSMoveTask.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
-		createResource("http://www.example.org/task-fsmove/schemas/Oomph-task-fsmove.ecore");
+		createResource("https://raw.githubusercontent.com/themetalone/oomph-task-fsmove/master/task-fsmove-updatesite/model/Oomph-task-fsmove.ecore");
 
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
@@ -225,7 +225,7 @@ public class fsmovePackageImpl extends EPackageImpl implements fsmovePackage {
 		  (this, 
 		   source, 
 		   new String[] {
-			 "schemaLocation", "http://www.example.org/task-fsmove/schemas/Oomph-task-fsmove.ecore"
+			 "schemaLocation", "https://raw.githubusercontent.com/themetalone/oomph-task-fsmove/master/task-fsmove-updatesite/model/Oomph-task-fsmove.ecore"
 		   });
 	}
 
@@ -242,7 +242,7 @@ public class fsmovePackageImpl extends EPackageImpl implements fsmovePackage {
 		   source, 
 		   new String[] {
 			 "variableName", "p2.fs.move",
-			 "repository", "http://download.example.org/task-fsmove/updates",
+			 "repository", "https://themetalone.github.io/oomph-task-fsmove/update/",
 			 "installableUnits", "task-fsmove.feature.group"
 		   });
 	}

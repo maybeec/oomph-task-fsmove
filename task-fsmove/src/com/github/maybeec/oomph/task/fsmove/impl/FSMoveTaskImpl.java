@@ -4,6 +4,9 @@ package com.github.maybeec.oomph.task.fsmove.impl;
 
 import com.github.maybeec.oomph.task.fsmove.FSMoveTask;
 import com.github.maybeec.oomph.task.fsmove.fsmovePackage;
+import com.github.maybeec.oomph.task.fsmove.core.FSMoveUtil;
+import com.github.maybeec.oomph.task.fsmove.core.SetupTaskLogger;
+import com.github.maybeec.oomph.task.fsmove.core.impl.FSMoveUtilImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -271,12 +274,14 @@ public class FSMoveTaskImpl extends SetupTaskImpl implements FSMoveTask {
 	}
 
 	public boolean isNeeded(SetupTaskContext context) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	public void perform(SetupTaskContext context) throws Exception {
-		// TODO Auto-generated method stub
+		SetupTaskLogger.getLogger().setContext(context);
+		
+		FSMoveUtil fsMoveUtil = new FSMoveUtilImpl();
+		fsMoveUtil.move(resource, destination);
 		
 	}
 
