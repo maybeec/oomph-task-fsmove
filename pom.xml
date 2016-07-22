@@ -3,9 +3,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.maybeec.oomph</groupId>
-  <artifactId>task-fsrename-parent</artifactId>
+  <artifactId>task-fsmove-parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>Oomph Task - File System Rename - Parent</name>
+  <name>Oomph Task - File System Move - Parent</name>
   <packaging>pom</packaging>
 
   <developers>
@@ -54,10 +54,10 @@
   </properties>
 
   <modules>
-    <module>task-fsrename</module>
-    <module>task-fsrename.edit</module>
-    <module>task-fsrename-feature</module>
-    <module>task-fsrename-updatesite</module>
+    <module>task-fsmove</module>
+    <module>task-fsmove.edit</module>
+    <module>task-fsmove-feature</module>
+    <module>task-fsmove-updatesite</module>
   </modules>
 
   <build>

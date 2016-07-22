@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/task-fsmove-feature_0.0.0.jar" id="task-fsmove-feature" version="0.0.0">
+      <category name="com.github.maybeec.oomph.tasks.category"/>
+   </feature>
+   <category-def name="com.github.maybeec.oomph.tasks.category" label="Oomph Setup Tasks"/>
+</site>
