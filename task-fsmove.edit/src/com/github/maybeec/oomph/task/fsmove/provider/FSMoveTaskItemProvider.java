@@ -3,9 +3,6 @@
 package com.github.maybeec.oomph.task.fsmove.provider;
 
 
-import com.github.maybeec.oomph.task.fsmove.FSMoveTask;
-import com.github.maybeec.oomph.task.fsmove.fsmovePackage;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -18,6 +15,9 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.eclipse.oomph.setup.provider.SetupTaskItemProvider;
+
+import com.github.maybeec.oomph.task.fsmove.FSMoveTask;
+import com.github.maybeec.oomph.task.fsmove.fsmovePackage;
 
 /**
  * This is the item provider adapter for a {@link com.github.maybeec.oomph.task.fsmove.FSMoveTask} object.

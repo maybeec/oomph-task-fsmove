@@ -19,7 +19,7 @@ import org.eclipse.oomph.setup.SetupTask;
  * </ul>
  *
  * @see com.github.maybeec.oomph.task.fsmove.fsmovePackage#getFSMoveTask()
- * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.move' repository='https://themetalone.github.io/oomph-task-fsmove/update/' installableUnits='task-fsmove-feature'"
+ * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.move' repository='https://themetalone.github.io/oomph-task-fsmove/update/' installableUnits='com.github.maybeec.oomph.task.fsmove.feature.feature.group'"
  *        annotation="http://www.eclipse.org/oomph/setup/ValidTriggers triggers='BOOTSTRAP MANUAL'"
  * @generated
  */

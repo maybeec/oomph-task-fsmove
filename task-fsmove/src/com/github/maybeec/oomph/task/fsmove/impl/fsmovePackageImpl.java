@@ -243,7 +243,7 @@ public class fsmovePackageImpl extends EPackageImpl implements fsmovePackage {
 		   new String[] {
 			 "variableName", "p2.fs.move",
 			 "repository", "https://themetalone.github.io/oomph-task-fsmove/update/",
-			 "installableUnits", "task-fsmove-feature"
+			 "installableUnits", "com.github.maybeec.oomph.task.fsmove.feature.feature.group"
 		   });
 	}
 

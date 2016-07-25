@@ -2,11 +2,6 @@
  */
 package com.github.maybeec.oomph.task.fsmove.provider;
 
-import com.github.maybeec.oomph.task.fsmove.fsmoveFactory;
-import com.github.maybeec.oomph.task.fsmove.fsmovePackage;
-
-import com.github.maybeec.oomph.task.fsmove.util.fsmoveAdapterFactory;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -46,6 +41,10 @@ import org.eclipse.oomph.setup.SetupPackage;
 import org.eclipse.oomph.setup.SetupTaskContainer;
 
 import org.eclipse.oomph.setup.util.SetupSwitch;
+
+import com.github.maybeec.oomph.task.fsmove.fsmoveFactory;
+import com.github.maybeec.oomph.task.fsmove.fsmovePackage;
+import com.github.maybeec.oomph.task.fsmove.util.fsmoveAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.

@@ -8,7 +8,7 @@
     <eAnnotations source="http://www.eclipse.org/oomph/setup/Enablement">
       <details key="variableName" value="p2.fs.move"/>
       <details key="repository" value="https://themetalone.github.io/oomph-task-fsmove/update/"/>
-      <details key="installableUnits" value="task-fsmove-feature"/>
+      <details key="installableUnits" value="com.github.maybeec.oomph.task.fsmove.feature.feature.group"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/oomph/setup/ValidTriggers">
       <details key="triggers" value="BOOTSTRAP MANUAL"/>

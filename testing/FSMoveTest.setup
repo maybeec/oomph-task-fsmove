@@ -21,13 +21,15 @@
   </annotation>
   <setupTask
       xsi:type="setup:VariableTask"
+      type="FOLDER"
       name="installation.location"/>
   <setupTask
       xsi:type="fsmove:FSMoveTask"
       id="fsmove.test"
       excludedTriggers="MANUAL"
       resource="${installation.location/this.txt}"
-      destination="${installation.location/text/this.txt}">
+      destination="${installation.location/text/this.txt}"
+      priority="100">
     <description>Excpects 'this.txt' in the installation location and './text/this.txt' non existent</description>
   </setupTask>
   <version name="Test"/>

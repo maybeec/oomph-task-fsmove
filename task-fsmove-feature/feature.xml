@@ -10,7 +10,7 @@
     Eike Stepper - initial API and implementation
 -->
 <feature
-      id="task-fsmove-feature"
+      id="com.github.maybeec.oomph.task.fsmove.feature"
       label="%featureName"
       version="1.0.0.qualifier"
       provider-name="%providerName">
@@ -98,18 +98,18 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
    <url>
       <update label="%updateSiteName" url="https://themetalone.github.io/oomph-task-fsmove/updates"/>
-      <discovery label="%updateSiteName" url="http://download.example.org/task-fsmove/updates"/>
+      <discovery label="%updateSiteName" url="https://themetalone.github.io/oomph-task-fsmove/updates"/>
    </url>
 
    <plugin
-         id="task-fsmove"
+         id="com.github.maybeec.oomph.task.fsmove"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="task-fsmove.edit"
+         id="com.github.maybeec.oomph.task.fsmove.edit"
          download-size="0"
          install-size="0"
          version="0.0.0"
