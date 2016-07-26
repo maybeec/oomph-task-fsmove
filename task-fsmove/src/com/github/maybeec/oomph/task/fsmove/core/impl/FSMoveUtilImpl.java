@@ -33,15 +33,29 @@ public class FSMoveUtilImpl implements FSMoveUtil {
 				if (f.isDirectory() && f.listFiles().length > 0) {
 					recursiveDirectoryMove(f, destination);
 				} else {
-					Files.move(f.toPath(), Paths.get(fileDestination), StandardCopyOption.COPY_ATTRIBUTES,
-							StandardCopyOption.REPLACE_EXISTING);
+					createPath(fileDestination);
+					Files.move(f.toPath(), Paths.get(fileDestination), StandardCopyOption.REPLACE_EXISTING);
 					LOG.log("Moved " + f.getPath() + " to " + fileDestination);
 				}
 			}
 		} else {
-			Files.move(source.toPath(), Paths.get(destination), StandardCopyOption.COPY_ATTRIBUTES,
-					StandardCopyOption.REPLACE_EXISTING);
+			createPath(destination);
+			Files.move(source.toPath(), Paths.get(destination), StandardCopyOption.REPLACE_EXISTING);
 			LOG.log("Moved " + source.getPath() + " to " + destination);
+		}
+	}
+
+	private void createPath(String pathString) {
+		File pathFile = new File(pathString);
+		LOG.log("Making path for " + pathString);
+		try {
+			if (pathFile.isDirectory()) {
+				pathFile.mkdirs();
+			} else {
+				pathFile.getParentFile().mkdirs();
+			}
+		} catch (Exception e) {
+			LOG.logError(e.getMessage());
 		}
 	}
 
