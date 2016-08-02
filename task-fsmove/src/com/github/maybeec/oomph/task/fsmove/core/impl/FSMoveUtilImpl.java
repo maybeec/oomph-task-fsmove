@@ -29,7 +29,7 @@ public class FSMoveUtilImpl implements FSMoveUtil {
 	private void recursiveDirectoryMove(File source, String destination) throws IOException {
 		if (source.isDirectory()) {
 			for (File f : source.listFiles()) {
-				String fileDestination = destination + File.pathSeparator + f.getName();
+				String fileDestination = destination + File.separator + f.getName();
 				if (f.isDirectory() && f.listFiles().length > 0) {
 					recursiveDirectoryMove(f, destination);
 				} else {
