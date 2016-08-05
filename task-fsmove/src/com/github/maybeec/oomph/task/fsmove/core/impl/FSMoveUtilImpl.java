@@ -31,7 +31,7 @@ public class FSMoveUtilImpl implements FSMoveUtil {
 			for (File f : source.listFiles()) {
 				String fileDestination = destination + File.separator + f.getName();
 				if (f.isDirectory() && f.listFiles().length > 0) {
-					recursiveDirectoryMove(f, destination);
+					recursiveDirectoryMove(f, fileDestination);
 				} else {
 					createPath(fileDestination);
 					Files.move(f.toPath(), Paths.get(fileDestination), StandardCopyOption.REPLACE_EXISTING);
