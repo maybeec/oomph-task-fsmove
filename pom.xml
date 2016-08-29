@@ -21,16 +21,16 @@
     </developer>
   </developers>
 
-  <url>https://github.com/maybeec/oomph-task-cli</url>
+  <url>https://github.com/maybeec/oomph-task-fsmove</url>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/maybeec/oomph-task-cli/issues</url>
+    <url>https://github.com/maybeec/oomph-task-fsmove/issues</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git@github.com:maybeec/oomph-task-cli.git</connection>
-    <developerConnection>scm:git:git@github.com:maybeec/oomph-task-cli.git</developerConnection>
-    <url>git@github.com:maybeec/oomph-task-cli.git</url>
+    <connection>scm:git:git@github.com:maybeec/oomph-task-fsmove.git</connection>
+    <developerConnection>scm:git:git@github.com:maybeec/oomph-task-fsmove.git</developerConnection>
+    <url>git@github.com:maybeec/oomph-task-fsmove.git</url>
   </scm>
 
   <licenses>
