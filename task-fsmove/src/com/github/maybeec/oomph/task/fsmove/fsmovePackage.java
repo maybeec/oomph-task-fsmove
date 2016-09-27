@@ -21,7 +21,7 @@ import org.eclipse.oomph.setup.SetupPackage;
  * <!-- end-user-doc -->
  * @see com.github.maybeec.oomph.task.fsmove.fsmoveFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/themetalone/oomph-task-fsmove/master/task-fsmove-updatesite/model/Oomph-task-fsmove.ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/maybeec/oomph-task-fsmove/master/task-fsmove-updatesite/model/Oomph-task-fsmove.ecore'"
  * @generated
  */
 public interface fsmovePackage extends EPackage {
