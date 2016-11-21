@@ -1,5 +1,11 @@
 = Oomph Command Line Interface Setup Task
 
+[WARNING]
+====
+This task is deprecated. No further development is to be expected here. See https://github.com/maybeec/oomph-task-fscopy
+====
+
+
 == Purpose
 The `oomph-cli-task` is an extension for the https://projects.eclipse.org/proposals/oomph[Eclipse Oomph Installer] that allows to access the command line during the setup. The `cliTask` works as a wrapper for the `java.lang.ProcessBuilder`.
 
